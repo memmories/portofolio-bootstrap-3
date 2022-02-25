@@ -1,88 +1,221 @@
-html{
-    position: relative;
+html {
+  position: relative;
 }
 
 body {
-    margin-bottom: 100px;
-    margin-top: 30px;
+  margin-bottom: 100px;
+  margin-top: 30px;
 }
 
 .jumbotron {
-    background-image:url(../img/image1.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    max-width: 100%;
-    height: 70vh;
-    background-position: 0 -200px;
-    overflow: hidden;
-    background-repeat: no-repeat;
-    background-color: white;
-    
+  background-image: url(../img/image1.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  max-width: 100%;
+  height: 70vh;
+  background-position: 0 -200px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-color: white;
 }
-.jumbotron h1,.jumbotron p{
-    color: white;
-    text-shadow: 1px 1px 5px black;
+.jumbotron h1,
+.jumbotron p {
+  color: white;
+  text-shadow: 1px 1px 5px black;
 }
-
-
 
 .jumbotron img {
-    width: 300px;
-    border: 5px solid rgb(255, 255, 255);
-    box-shadow: 0 0 10px black;
+  width: 300px;
+  border: 5px solid rgb(255, 255, 255);
+  box-shadow: 0 0 10px black;
 }
 
-hr{
-    width: 250px;
-    border-top: 3px solid #000;
+hr {
+  width: 250px;
+  border-top: 3px solid #000;
 }
 
 section {
-    min-height: 600px;
+  min-height: 600px;
 }
 .portfolio {
-    background-color: #eee;
+  background-color: #eee;
 }
 
 .contact {
-    min-height: 800px;
+  min-height: 800px;
 }
 
-footer{
-    background-color: rgb(48, 45, 45);
-    width: 100%;
-    height: 100px;
-    position: absolute;
-    bottom: 0;
-    padding: 20px;
+footer {
+  background-color: rgb(48, 45, 45);
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  padding: 20px;
 }
 
-footer p{
-    color:#eee;
-    font-size: 1em;
+footer p {
+  color: #eee;
+  font-size: 1em;
 }
 
-.portfolio .thumbnail{
-    opacity: 0;
-    transition: .5s;
-    transform: translate(0,-40px);
+.portfolio .thumbnail {
+  opacity: 0;
+  transition: 0.5s;
+  transform: translate(0, -40px);
 }
 
-.portfolio .thumbnail.muncul{
-    opacity: 1;
-    transform: translate(0,0);
+.portfolio .thumbnail.muncul {
+  opacity: 1;
+  transform: translate(0, 0);
 }
 
-.pkanan, .pkiri{
-    opacity: 0;
-    transform: translate(-50px, 0) rotate(15deg);
-    transition: 10s;
+.pkanan,
+.pkiri {
+  opacity: 0;
+  transform: translate(-50px, 0) rotate(15deg);
+  transition: 10s;
 }
 
 .pkanan {
-    transform: translatex(50px) rotate(-15deg);
+  transform: translatex(50px) rotate(-15deg);
 }
-.pkanan.pmuncul, .pkiri.pmuncul{
-    opacity: 1;
-    transform: translate(0,0);
+.pkanan.pmuncul,
+.pkiri.pmuncul {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.fa-skype {
+  background: #00aff0;
+  color: white;
+}
+
+.fa-android {
+  background: #a4c639;
+  color: white;
+}
+
+.fa-dribbble {
+  background: #ea4c89;
+  color: white;
+}
+
+.fa-vimeo {
+  background: #45bbff;
+  color: white;
+}
+
+.fa-tumblr {
+  background: #2c4762;
+  color: white;
+}
+
+.fa-vine {
+  background: #00b489;
+  color: white;
+}
+
+.fa-foursquare {
+  background: #45bbff;
+  color: white;
+}
+
+.fa-stumbleupon {
+  background: #eb4924;
+  color: white;
+}
+
+.fa-flickr {
+  background: #f40083;
+  color: white;
+}
+
+.fa-yahoo {
+  background: #430297;
+  color: white;
+}
+
+.fa-soundcloud {
+  background: #ff5500;
+  color: white;
+}
+
+.fa-reddit {
+  background: #ff5700;
+  color: white;
+}
+
+.fa-rss {
+  background: #ff6600;
+  color: white;
+}
+
+.fa-github {
+  background: #000;
+  color: white;
+}
+.fa-whatsapp {
+  background: rgb(3, 211, 3);
+  color: white;
+  font-size: 100px;
+}
+h4 {
+  text-transform: uppercase;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
