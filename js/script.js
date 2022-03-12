@@ -56,13 +56,13 @@ const span = document.getElementsByClassName('close')[0];
 
 container.addEventListener('click', function (e) {
   if (e.target.id == 'myImg') {
-    modal.style.display = 'block';
+    modal.classList.add('show');
     modalImg.src = e.target.src;
     captionText.innerHTML = e.target.alt;
   }
 });
 span.onclick = function () {
-  modal.style.display = 'none';
+  modal.classList.remove('show');
 };
 // // Get the modal
 // const modal = document.getElementById('myModal');
